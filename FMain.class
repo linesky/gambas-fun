@@ -1,0 +1,21 @@
+' Gambas class file
+
+
+Public Sub Form_Open()
+
+  Shell "gpio mode 7 output"
+  Print "start gpio"
+
+End
+
+Public Sub Button1_Click()
+
+  Shell "gpio write 7 1"
+  Print "fun on"
+End
+
+Public Sub Button2_Click()
+  Shell "gpio write 7 0"
+  Print "fun off"
+
+End
